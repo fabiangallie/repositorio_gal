@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestion de Aula</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #00ff9966, 0 0 120px 60px #00ff9933 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff9988;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #00ff99;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #00ff99;
+      border: 2px solid #00ff99;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #00ff99;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #00ff9944;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ff9922;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ff99;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #00ff99;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <h1>Xestión de Aula</h1>
+<p>Fomentar un clima positivo e estratexias de organización na aula.</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i> Inicio</button>
+</header>
+<nav>
+  <button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i> Publicacións</button>
+  <button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i> Dinámicas</button>
+  <button onclick="mostrar('videos')"><i class="fas fa-video"></i> Vídeos</button>
+  <button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i> TIC</button>
+  <button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i> Lecturas</button>
+</nav>
+
+
+
+  <section id="dinamicas"><div class="card-container">
+ <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-users-cog" style="font-size:2rem;"></i>
+      <div>
+        <h3>Rueda de normas</h3>
+        <p>O grupo crea unha roda de cartón con normas de convivencia. Cada día gírase e destácase unha para reforzar na clase.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-clock" style="font-size:2rem;"></i>
+      <div>
+        <h3>Semáforo do tempo</h3>
+        <p>Utilízase un semáforo visual (verde, amarelado, vermello) para regular o tempo das actividades, axudando ao alumnado a autorregular o seu ritmo.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-handshake" style="font-size:2rem;"></i>
+      <div>
+        <h3>O responsable do día</h3>
+        <p>Cada día un alumno ten un rol asignado (repartir materiais, anotar tarefas, etc.). Favorece a responsabilidade e o orde.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-comments" style="font-size:2rem;"></i>
+      <div>
+        <h3>Minuto de silencio consciente</h3>
+        <p>Despois do recreo, realízase un minuto de silencio guiado. Axuda á transición e á recuperación do clima de aula.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-smile" style="font-size:2rem;"></i>
+      <div>
+        <h3>Emociómetro diario</h3>
+        <p>Cada alumno coloca o seu pin ou nome nunha emoción ao inicio do día. Permite ao docente xestionar o clima emocional.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-bullseye" style="font-size:2rem;"></i>
+      <div>
+        <h3>Obxectivo da semana</h3>
+        <p>Escóllese un obxectivo común (orde, silencio, puntualidade). Se se cumpren, o grupo recibe unha recompensa simbólica.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-microphone-alt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Portavoz de grupo</h3>
+        <p>Nas actividades grupais, un portavoz transmite as ideas ao resto. Fomenta o respecto aos turnos e a comunicación organizada.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-binoculars" style="font-size:2rem;"></i>
+      <div>
+        <h3>Observador invisible</h3>
+        <p>Un alumno observa sen intervir e logo comparte o que viu sobre a dinámica do grupo. Refuerza a autorreflexión colectiva.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-thumbs-up" style="font-size:2rem;"></i>
+      <div>
+        <h3>Rincón dos logros</h3>
+        <p>Dedícase un espazo da aula para anotar logros de convivencia e conduta positiva. Refuerza o reforzo positivo colectivo.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-random" style="font-size:2rem;"></i>
+      <div>
+        <h3>Cambia o rol</h3>
+        <p>Os alumnos intercambian tarefas (encargado do material, do tempo, do orde). Todos coñecen os roles de aula.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book-reader" style="font-size:2rem;"></i>
+      <div>
+        <h3>Lectura silenciosa con sinais</h3>
+        <p>Durante a lectura, os alumnos levantan unha sinal para pedir axuda sen falar. Fomenta a autonomía e o respecto.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-star" style="font-size:2rem;"></i>
+      <div>
+        <h3>Alumno/a estrela</h3>
+        <p>Cada semana escóllese a un alumno polo seu comportamento. Recibe recoñecemento simbólico. Potencia o comportamento exemplar.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-route" style="font-size:2rem;"></i>
+      <div>
+        <h3>Ruta de entrada e saída</h3>
+        <p>Marcanse nas aulas as rutas de entrada/salida con sinais visuais. Favorece orde e seguridade.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-chart-line" style="font-size:2rem;"></i>
+      <div>
+        <h3>Gráfica de ruído</h3>
+        <p>Con unha app ou instrumento manual, mídese o nivel de ruído. Reflexiónase sobre o resultado co grupo.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-user-check" style="font-size:2rem;"></i>
+      <div>
+        <h3>Lista de roles rotativos</h3>
+        <p>Cada semana repártense novos roles aos estudantes, que se anotan nunha táboa visible na clase.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-chalkboard-teacher" style="font-size:2rem;"></i>
+      <div>
+        <h3>Minuto de reflexión final</h3>
+        <p>Antes de saír, os alumnos comparten en voz alta ou por escrito que aprenderon e como se sentiron na aula.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-grin-stars" style="font-size:2rem;"></i>
+      <div>
+        <h3>Círculo de recoñecemento</h3>
+        <p>Ao final da semana, o grupo destaca actitudes positivas observadas nos seus compañeiros.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-magic" style="font-size:2rem;"></i>
+      <div>
+        <h3>Palabra máxica do día</h3>
+        <p>Escóllese unha palabra ou actitude clave (ex. paciencia). Lembrase durante o día e premiánse exemplos vividos.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-eye" style="font-size:2rem;"></i>
+      <div>
+        <h3>Tempo de mirar atrás</h3>
+        <p>Os venres revisan as metas de conduta establecidas. Reconóceselles os logros e aspectos a mellorar.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-users" style="font-size:2rem;"></i>
+      <div>
+        <h3>Rueda de resolución de conflitos</h3>
+        <p>Síguese un protocolo visual para resolver conflitos en parella ou grupo. Promóvese a autonomía na xestión emocional.</p>
+      </div>
+    </div>
+    
+</div></section>
+
+
+  <section id="publicaciones"><div class="card-container">
+
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>Estratexias de xestión da aula para profesores de primaria</h3>
+        <p>Análise sobre como aplicar técnicas de xestión na aula desde unha perspectiva pedagóxica.</p>
+        <a href="https://www.redalyc.org/articulo.oa?id=35653425003" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>Como mellorar a xestión da aula: guía práctica para docentes</h3>
+        <p>Proposta de accións concretas para mellorar o clima escolar desde a xestión docente.</p>
+        <a href="https://revistas.uma.es/index.php/educatio/article/view/12345" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>Xestión de aula e mellora do clima escolar</h3>
+        <p>Estudo universitario sobre estratexias efectivas de organización da aula.</p>
+        <a href="https://revistas.uva.es/index.php/relatec/article/view/4879" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>Xestión eficaz do comportamento na aula</h3>
+        <p>Reflexión crítica sobre as técnicas para mellorar a disciplina en contextos escolares.</p>
+        <a href="https://www.rieoei.org/RIE/article/view/442" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>Deseño de contornos de aprendizaxe positivos</h3>
+        <p>Documento UNESCO sobre o deseño de espazos escolares orientados ao benestar e á xestión emocional.</p>
+        <a href="https://unesdoc.unesco.org/ark:/48223/pf0000247511" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>A organización da aula como factor pedagóxico</h3>
+        <p>Estudo que relaciona a disposición do espazo coa participación e disciplina.</p>
+        <a href="https://recyt.fecyt.es/index.php/profesorado/article/view/44859" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>Aulas inclusivas: xestión participativa da aula</h3>
+        <p>Guía do Ministerio de Educación sobre inclusión e xestión cooperativa.</p>
+        <a href="https://sede.educacion.gob.es/publiventa/aulas-inclusivas/educacion-especial/23932" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>A disciplina positiva na aula: unha alternativa eficaz</h3>
+        <p>Documento divulgativo sobre como xestionar a aula desde o respecto mutuo.</p>
+        <a href="https://educacion.educaixa.com/es/-/la-disciplina-positiva-en-el-aula" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>Factores que inflúen na xestión da aula en educación primaria</h3>
+        <p>Investigación educativa que identifica boas prácticas en xestión da aula.</p>
+        <a href="https://www.redalyc.org/articulo.oa?id=217036646003" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book" style="font-size:2rem;"></i>
+      <div>
+        <h3>Resolución de conflitos na aula: técnicas e recursos para docentes</h3>
+        <p>Técnicas de mediación e xestión emocional aplicadas ao contexto da aula.</p>
+        <a href="https://revistas.usc.gal/index.php/reladei/article/view/6681" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+      </div>
+    </div>
+    
+</div></section>
+
+
+ <section id="videos"><div class="card-container">
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Regras do Xogo – Merlin Flügel</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/A1cEcdixWfg" title="Regras do Xogo" frameborder="0" allowfullscreen></iframe>
+      <p>Os nenos xogan sen regras e todo se descontrola ata que crean normas que reorganizan o xogo. Excelente para reflexionar sobre o xurdimento das regras.</p>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Ben & Jerry – Amizade e conflito</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/5BDVH8Ms5h0" title="Ben & Jerry CGI Animation" frameborder="0" allowfullscreen></iframe>
+      <p>Unha amizade ponse en risco polo orgullo e desacordos. Ideal para traballar a resolución de conflitos e a importancia do diálogo.</p>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Balablok – Discriminación e conflito</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/4tj42ETz88w?si=_PWCyIC7Z-QvLYlN" title="Balablok" frameborder="0" allowfullscreen></iframe>
+      <p>Figuras xeométricas entran en conflito polas súas diferenzas. Metáfora visual sobre intolerancia e falta de comunicación.</p>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Robbers Cave Experiment – Cooperación vs. conflito</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/W9DyGsuvIPo" title="Robbers Cave Experiment" frameborder="0" allowfullscreen></iframe>
+      <p>Os nenos divididos en grupos que compiten e logo se ven obrigados a cooperar. Gran experimento social sobre identidade grupal e cohesión.</p>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+      <h3><i class="fas fa-film"></i> A Brief Disagreement</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/9x7FGbW3IVc" title="A Brief Disagreement" frameborder="0" allowfullscreen></iframe>
+      <p>Un pequeno desacordo escala entre dous amigos. Ideal para explorar a importancia de parar e dialogar en momentos de tensión.</p>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Struggling to Follow the Rules</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/ZFM63Hrviro" title="Struggling to Follow the Rules" frameborder="0" allowfullscreen></iframe>
+      <p>Grupo de nenos nun experimento real: ao principio sen normas, logo con regras claras. Mostra o poder dos límites positivos.</p>
+    </div>
+</div></section>
+
+<section id="tic"><div class="card-container">
+    <div class="card">
+      <h3><i class="fas fa-user-check"></i> <a href="https://classroom.google.com/" target="_blank">Google Classroom</a></h3>
+      <p>Plataforma para organizar tarefas, compartir materiais e comunicarse cos alumnos. Favorece a planificación e a autonomía.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-bullhorn"></i> <a href="https://www.classdojo.com/" target="_blank">ClassDojo</a></h3>
+      <p>Refuerza condutas positivas, promove o respecto e mellora a comunicación coas familias. Útil para crear un clima positivo.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-calendar-alt"></i> <a href="https://calendar.google.com" target="_blank">Google Calendar</a></h3>
+      <p>Permite planificar actividades, organizar turnos e coordinar eventos escolares ou tarefas entre docentes e estudantes.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-chalkboard"></i> <a href="https://nearpod.com/" target="_blank">Nearpod</a></h3>
+      <p>Presentacións interactivas que involucran aos alumnos con cuestionarios, debates e xogos. Fomenta o control do ritmo da clase.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-random"></i> <a href="https://wheelofnames.com/" target="_blank">Wheel of Names</a></h3>
+      <p>Ruleta dixital para elixir alumnos ao azar, asignar grupos ou repartir tarefas. Promove a equidade e a participación.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-comment-dots"></i> <a href="https://www.mentimeter.com/" target="_blank">Mentimeter</a></h3>
+      <p>Ferramenta para enquisas e preguntas en vivo. Útil para coñecer opinións, emocións ou avaliar a comprensión do grupo.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-mobile-alt"></i> <a href="https://www.remind.com/" target="_blank">Remind</a></h3>
+      <p>App de mensaxería segura para enviar recordatorios, tarefas ou felicitacións. Mellora a comunicación alumno-profesor-familia.</p>
+    </div>
+</div></section>
+
+  <section id="lecturas"><div class="card-container">
+
+
+</div></section>
+
+  <footer>
+    EscolaDiversa - Competencia Clave: Xestion Aula
+  </footer>
+
+  <script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
