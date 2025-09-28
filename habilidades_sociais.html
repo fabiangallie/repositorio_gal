@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habilidades Sociales</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #00ffff66, 0 0 120px 60px #00ffff33 inset;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #00ffff;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #00ffff;
+      color: #000;
+    }
+    section { display: none; }
+    section.active { display: block; }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #00ffff44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ffff22;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ffff;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .card p, .card a {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a { text-decoration: underline; }
+    .card img, iframe {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+.card a {
+  display: inline-block;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card a:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Habilidades Sociais</h1>
+<p>Desenvolver a comunicación, a cooperación e a resolución de conflitos de forma positiva</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i> Inicio</button>
+</header>
+
+<nav>
+  <button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i> Publicacións</button>
+  <button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i> Dinámicas</button>
+  <button onclick="mostrar('videos')"><i class="fas fa-video"></i> Vídeos</button>
+  <button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i> TIC</button>
+  <button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i> Lecturas</button>
+</nav>
+
+<section id="dinamicas">
+  <div class="card-container">
+    <div class="card">
+      <h3><i class="fas fa-users"></i> O equipo ideal</h3>
+      <p>Os alumnos forman pequenos grupos para planificar unha expedición imaxinaria. Deben asignar roles (líder, loxística, saúde, etc.), xustificar a súa elección e presentar o seu plan. Foméntase o traballo colaborativo, a toma de decisións consensuada e a escoita activa.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-comments"></i> Conversas cooperativas</h3>
+      <p>Sentados en círculo, cada alumno engade unha frase para crear unha historia colectiva. A dinámica obriga a prestar atención, respectar os turnos e construír sobre o que dixeron os demais, fortalecendo as habilidades comunicativas básicas.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-theater-masks"></i> Teatro das emocións</h3>
+      <p>Represéntanse escenas cotiás onde interveñen emocións sociais (desculpas, desacordos, peticións). Despois reflexiónase sobre que estratexias sociais foron máis efectivas e respectuosas.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-puzzle-piece"></i> Puzzle cooperativo</h3>
+      <p>Cada grupo recibe pezas incompletas dun rompecabezas. Para completalo deben negociar con outros equipos. O obxectivo é estimular a cooperación intergrupal e a resolución conxunta de problemas.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-question-circle"></i> Qué dirías ti?</h3>
+      <p>Presentan situacións sociais incómodas ou conflitivas (rexeitamento, burla, exclusión) e preguntan: “Qué dirías ti?”. Os alumnos analizan a resposta máis empática e axeitada, desenvolvendo o pensamento social.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-volume-up"></i> O xogo do eco</h3>
+      <p>Por turnos, un alumno di unha frase cunha emoción (alegría, tristeza, enfado...) e o seu compañeiro debe repetila exactamente, imitando ton e expresión. Mellora a atención e a comprensión emocional na comunicación.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-arrows-alt-v"></i> Espalda con espalda</h3>
+      <p>En parellas, sentados espalda con espalda, deben levantarse sen usar as mans. Só se comunican verbalmente. Fortalece a escoita, a coordinación e a confianza mutua.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-envelope-open-text"></i> Buzón dos cumpridos</h3>
+      <p>Cada alumno escribe unha nota anónima positiva a un compañeiro. Logo, as notas repártense e léense en voz alta. Foméntase a autoestima, o recoñecemento e o respecto dentro do grupo.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-project-diagram"></i> A teia</h3>
+      <p>Usando un ovillo de fío, os alumnos lánzano uns aos outros, dicindo unha calidade positiva do receptor. Cando rematen, obsérvase unha teia que representa a conexión grupal. Foméntase o sentido de pertenza e a valoración mutua.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-traffic-light"></i> Semáforo social</h3>
+      <p>Presentan comportamentos típicos e os alumnos deciden se corresponden ao vermello (prohibido), amarelo (precaución) ou verde (positivo). Reflexiónase sobre as normas de convivencia e respeto.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-mask"></i> Caixa de roles</h3>
+      <p>Sácanse tarxetas con roles como “líder”, “observador”, “crítico construtivo”, etc. Logo, representan breves escenas sociais segundo o rol asignado. Reflexiónase sobre as diferentes formas de participar.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-microphone-alt"></i> Aciña as túas palabras</h3>
+      <p>Sentados en círculo, lánzanse pelotas brandas dicindo frases positivas (“Pódoche axudar?”, “Bo traballo”, etc.). Quen a recibe debe dicir outra frase amable. Foméntase o uso dun linguaxe afectivo e respectuoso.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-people-arrows"></i> Mímica de emocións</h3>
+      <p>Sen falar, deben representar emocións como frustración, alegría ou vergonza. O grupo debe adiviñalas. Foméntase a empatía e o recoñecemento non verbal dos estados emocionais.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-star"></i> O eloxio secreto</h3>
+      <p>Cada alumno observa un compañeiro en segredo durante o día. Ao final, escribe un eloxio sincero para esa persoa. Esta dinámica refuerza a observación positiva e a empatía.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-comments-dollar"></i> Monedas de amabilidade</h3>
+      <p“Monedas” repártense por condutas prosociais observadas. Ao final da semana, pódense trocar por recompensas grupais (elogios, liderar xogos, etc.). Foméntase as boas accións.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-users-cog"></i> Construír acordos</h3>
+      <p>Os grupos reciben un conflito ficticio e deben redactar regras ou acordos para axudar a resolvelo. Logo representan a escena aplicando as súas propostas. Esta dinámica entrena a resolución positiva de conflitos.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Debate de ideas</h3>
+      <p>Propoñen temas polémicos adaptados á idade (como deberes, videoxogos, etc.) e os alumnos deben expor argumentos a favor ou en contra, sen interromper. Mellora a argumentación e o respecto polas opinións.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-gamepad"></i> Xogo de turnos</h3>
+      <p>Jóganse a xiros xogos de taboleiro ou cartas onde se debe respectar o turno. Posteriormente reflexiónase sobre a paciencia, o respecto e o cumprimento de normas.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-search"></i> Detectives do respecto</h3>
+      <p>Durante o día ou a semana, os alumnos deben anotar accións respectuosas que vexan. Ao final comparten as súas observacións. Refuerza a atención positiva e a convivencia saudable.</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-handshake-angle"></i> Misiones colaborativas</h3>
+      <p>Se asignan tarefas ou retos por equipos (construír unha torre, resolver un acertixo, etc.) que só poden completarse se todos participan. Evalúase o nivel de cooperación.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="publicaciones">
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-book-open"></i> Competencias DELAC: Aprendizaxe Social-Emocional (SEL)</h3>
+      <p>Documento oficial en galego que define e estrutura as habilidades sociais como parte do aprendizaxe socioemocional.</p>
+      <a href="https://dpi.wi.gov/sites/default/files/imce/sspw/social_emotional_learning_competencies_print_ES.pdf" target="_blank">Ler máis (PDF SEL – Wisconsin DPI)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-user-friends"></i> Manual de habilidades sociais en adolescentes</h3>
+      <p>Guía técnica desde a perspectiva de saúde pública, orientada a fortalecer habilidades sociais na adolescencia.</p>
+      <a href="https://bvs.minsa.gob.pe/local/promocion/170_adolec.pdf" target="_blank">Ler máis (PDF – MINSA Perú)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-school"></i> Desenvolvemento de habilidades sociais e emocionais</h3>
+      <p>Material SEP para crear contornos educativos armoniosos, con exercicios prácticos para a aula.</p>
+      <a href="https://educacionbasica.sep.gob.mx/wp-content/uploads/2022/12/C2_1Desarrollo-de-habilidades-sociales-y-emocionales-para-entornos-educativos-armonicos.pdf" target="_blank">Ler máis (PDF – SEP)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-users-cog"></i> As habilidades sociais na escola</h3>
+      <p>Análise teórica sobre a súa relevancia en nenos e adolescentes e o seu uso preventivo na saúde mental.</p>
+      <a href="https://generaconocimiento.segob.gob.mx/sites/default/files/document/biblioteca/182/20210408-las-habilidades-sociales-en-ninos-y-adolescentes-su-importancia-en-la-prevencion-de.pdf" target="_blank">Ler máis (PDF)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-comments"></i> Enseñando habilidades sociais na aula</h3>
+      <p>Manual didáctico da UNAM con actividades concretas para primaria.</p>
+      <a href="https://www.psicologia.unam.mx/documentos/pdf/publicaciones/Ensenando_habilidades_sociales_en_el_aula_Flores_Monanez_y_Ramos_Prado.pdf" target="_blank">Ler máis (PDF – UNAM)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-handshake"></i> Habilidades sociais no ámbito escolar como ferramenta motivacional</h3>
+      <p>Artigo académico español que analiza o seu impacto na motivación estudiantil.</p>
+      <a href="https://www.redalyc.org/journal/3498/349860896007/349860896007.pdf" target="_blank">Ler máis (PDF – Redalyc)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-child"></i> Programa de intervención en adolescentes</h3>
+      <p>Evaluación dun programa aplicado en secundaria que mellora normas sociais e empatía.</p>
+      <a href="https://repositorio.upch.edu.pe/bitstream/20.500.12866/11947/1/Programa_BernardoArevalo_Sara.pdf" target="_blank">Ler máis (PDF)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-graduation-cap"></i> Revisión sistemática de recursos de intervención</h3>
+      <p>Recente revisión sobre recursos didácticos en escolas de Latinoamérica.</p>
+      <a href="https://www.revista-mexicana-investigacion-educativa.unam.mx/index.php/rmie/article/view/375834061" target="_blank">Ler máis (RMIE 2023)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-home"></i> Plan de intervención: “Aprendendo a relacionarse”</h3>
+      <p>Programa específico para 1º de ESO con actividades para adestrar habilidades sociais.</p>
+      <a href="https://www.alcalibe.es/images/Alcalibe_16/plan%20de%20intervencion%20habilidades%20sociales.pdf" target="_blank">Ler máis (PDF)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-vr-cardboard"></i> Habilidades sociais en primaria: estudo en Granada</h3>
+      <p>Traballo fin de grao da Universidade de Granada con avaliación cuantitativa no alumnado de 10‑12 anos.</p>
+      <a href="https://es.scribd.com/document/499838661/Habilidades-sociales-primaria" target="_blank">Ler máis (Scribd)</a>
+    </div>
+
+  </div>
+</section>
+
+
+ <section id="videos">
+
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Curtametraxes das habilidades sociais</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/VYVjwOIwVE4" title="Curtametraxes das habilidades sociais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>Compilado que presenta situacións reais nas que os nenos desenvolven comunicación, empatía e traballo en equipo.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Curtametraxe animada para pensar habilidades socio‑emocionais</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/KvZ-cdd37mw" title="CURTO ANIMADO- habilidades socio emocionales" frameborder="0" allowfullscreen></iframe>
+      <p>Curtametraxe infantil que ilustra respecto, autocontrol e empatía sen diálogo, ideal para primaria.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Laika & Nemo – Poder da amizade</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/3tDJQ4FUvz0" title="Laika & Nemo" frameborder="0" allowfullscreen></iframe>
+      <p>Historieta emotiva sobre camaradería e apoio entre amigos, perfecta para reflexionar sobre a amizade.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Habilidades Sociais – K‑3er Grado</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/rD_bd2Hx9SY" title="Habilidades Sociais K‑3er Grado" frameborder="0" allowfullscreen></iframe>
+      <p>Vídeo educativo elaborado polo Departamento de Educación de Colorado, enfocado en habilidades sociais básicas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Curtametraxes sen palabras para habilidades sociais</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/playlist?list=PLBiQGs1J86QzojxpSssoDnh7PtpdnhOw2" title="Curtametraxes sen palabras para habilidades sociais" frameborder="0" allowfullscreen></iframe>
+      <p>Série de curtametraxes sen diálogos sobre situacións sociais como cooperación, exclusión e resolución de conflitos.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Aprende sobre habilidades sociais – Playlist</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/playlist?list=PLamP0SVIfQg5tYPiV7z1h3j3WeNC2_CEV" title="Habilidades Sociais playlist" frameborder="0" allowfullscreen></iframe>
+      <p>Playlist que aborda empatía, compartir e comunicación, con recursos visuais pensados para primaria.</p>
+    </div>
+
+    <!-- Vídeos adicionais para completar 10 -->
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Snack Attack – Estereotipos e empatía</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/38y_1EWIE9I?si=Y1b5r7sbeA_77fnI" title="Snack Attack" frameborder="0" allowfullscreen></iframe>
+      <p>Curtametraxe sen palabras ideal para reflexionar en grupo sobre prexuízos, empatía e supostos.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> For the Birds – Resolución de conflitos</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/DeEZx4K0Eic?si=jL_yxachZZOYNLmX" title="For the Birds" frameborder="0" allowfullscreen></iframe>
+      <p>Curtametraxe de Pixar que mostra como actuar con respecto diante da diferenza e o conflito grupal.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Bully Dance – Acoso escolar e reacción colectiva</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/4K02OxmV3-0?si=DKTi1MlaqghvMwH8" title="Bully Dance" frameborder="0" allowfullscreen></iframe>
+      <p>Curtametraxe sen diálogos sobre como a comunidade escolar pode unirse para enfrontar o acoso.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> One Small Step</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/3XA0bB79oGc" title="One Small Step" frameborder="0" allowfullscreen></iframe>
+      <p>Curtametraxe de TAIKO Studios sobre perseveranza, apoio familiar e autoestima, útil tamén para habilidades sociais.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Ian – Inclusión e xogo compartido</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/OHma93eZiBY?si=H4V3Z6hfHF7AGd-m" title="Ian cortometraje" frameborder="0" allowfullscreen></iframe>
+      <p>Curtametraxe que sensibiliza sobre a inclusión de nenos con parálise cerebral en actividades de aula.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> A amabilidade</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/QXiwZtnQq88?si=OSXl3RtJ5YbVqf1R" title="A amabilidade" frameborder="0" allowfullscreen></iframe>
+      <p>Curtametraxe animada que ensina o valor de que a amabilidade entre as persoas pode facernos felices.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Identificar as emocións</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/dwInsI-07yM?si=ViI-q5r-7WDll-wE" title="Identificar as emocións" frameborder="0" allowfullscreen></iframe>
+      <p>Aprender a recoñecer as emocións en diferentes situacións coas súas películas favoritas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Estilos de comunicación</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/u4sQ9jwySz4?si=pycDYjbY1D242VB9" title="Estilos de comunicación" frameborder="0" allowfullscreen></iframe>
+      <p>Vídeo nos que se presentan diferentes estilos de comunicación.</p>
+    </div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Coñecendo as habilidades sociais</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/hxU1fIJh9KM" title="Coñecendo as habilidades sociais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo de Save the Children que introduce de forma clara que son as habilidades sociais e a súa importancia.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Como axudar ao meu fillo a desenvolver habilidades sociais</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/6hehHJqQ-ZU" title="Como axudar ao meu fillo a desenvolver habilidades sociais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Consellos e estratexias para que os adultos poidan acompañar o desenvolvemento social dos nenos.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Glupy: conto para aprender habilidades sociais</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/Y-But8g4ERA" title="Glupy: conto para aprender habilidades sociais" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Un conto animado no que un peixe aprende a importancia de escoitar, comunicarse e relacionarse cos demais.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> A importancia das habilidades sociais nos nenos</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/78Z3wFxYkm0" title="A importancia das habilidades sociais nos nenos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Explicación de por que as habilidades sociais son fundamentais para a vida diaria dos nenos e nenas.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> 7 trucos para traballar habilidades sociais en nenos</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/qEVMRgNifXg" title="7 trucos para traballar habilidades sociais en nenos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Consellos prácticos para aplicar na casa ou na aula e facilitar o desenvolvemento social do alumnado.</p>
+</div>
+
+
+  </div>
+</section>
+
+
+
+ <section id="tic">
+ 
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-mobile-alt" style="color:#ffd54f;"></i> ¿Qué Harías? (TinyTap)</h3>
+      <p>Juego interactivo donde los alumnos responden a situaciones sociales cotidianas (5‑6 años).</p>
+      <a href="https://www.tinytap.com/activities/g364y/play/qu%C3%A9-har%C3%ADas-habilidades-sociales" target="_blank" style="color:#00ffff; text-decoration:underline;">Jugar ahora</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-gamepad" style="color:#ffd54f;"></i> Ruleta Habilidades Sociales (Wordwall)</h3>
+      <p>Actividad online tipo 'ruleta' para practicar respuestas sociales y emociones con preguntas variadas.</p>
+      <a href="https://wordwall.net/es-ar/community/juego/de-habilidades-sociales" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-chalkboard-teacher" style="color:#ffd54f;"></i> Kahoot!</h3>
+      <p>Plataforma de quiz grupales: puedes crear cuestionarios sobre comunicación, respeto y cooperación :contentReference[oaicite:1]{index=1}.</p>
+      <a href="https://kahoot.com" target="_blank" style="color:#00ffff; text-decoration:underline;">Acceder</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-user-friends" style="color:#ffd54f;"></i> ClassDojo</h3>
+      <p>App para dar retroalimentación sobre habilidades sociales, trabajo en equipo y conductas positivas :contentReference[oaicite:2]{index=2}.</p>
+      <a href="https://www.classdojo.com" target="_blank" style="color:#00ffff; text-decoration:underline;">Descargar</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-check-square" style="color:#ffd54f;"></i> Socrative</h3>
+      <p>Aula digital para quiz, preguntas breves y “tickets de salida” sobre emociones, respeto y clima social :contentReference[oaicite:3]{index=3}.</p>
+      <a href="https://www.socrative.com" target="_blank" style="color:#00ffff; text-decoration:underline;">Probar herramienta</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-globe" style="color:#ffd54f;"></i> Portales educativos (Didactalia, Educa con TIC…)</h3>
+      <p>Ofrecen actividades digitales sobre valores, diálogo y convivencia escolar :contentReference[oaicite:4]{index=4}.</p>
+      <a href="https://www.educaciontrespuntocero.com/recursos/portales-con-recursos-tic-gratuitos/" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver portales</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-brain" style="color:#ffd54f;"></i> Apps de habilidades sociales (Elevart)</h3>
+      <p>Apps móviles para aprender emociones, empatía y asertividad a través de cuentos interactivos :contentReference[oaicite:5]{index=5}.</p>
+      <a href="https://www.elevart.org/apps-para-estimular-las-habilidades-sociales-en-los-ninos/" target="_blank" style="color:#00ffff; text-decoration:underline;">Explorar apps</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="lecturas">
+
+  <div class="card-container">
+
+    <div class="card">
+      <img src="img/elcludelosvalientes.jpg" alt="O Club dos Valentes 1" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>O Club dos Valentes 1</h3>
+      <p><strong>Autor:</strong> María Menéndez-Ponte <br>
+      <strong>Idade:</strong> 9-12 anos<br>
+      <strong>ISBN:</strong> 978-8418594724</p>
+      <p>Nico soña con ser xogador de baloncesto. Kavinchi debuxa no seu caderno sen parar. Martina pasa o día deseñando. Lu non pode vivir sen escribir. Non teñen nada en común. Nada, excepto que non soportan as inxustizas. Cando se decatan de que un compañeiro de clase está sufrindo bullying, teñen claro: deben unirse para paralo.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/cuentosparaconvivir.jpg" alt="Contos para convivir mellor" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Contos para convivir mellor</h3>
+      <p><strong>Autor:</strong> Juan Carlos Arriaza Mayas<br>
+      <strong>Idade:</strong> 6-10 anos</p>
+      <p>Antoloxía de narracións breves sobre empatía, normas de convivencia e respecto, acompañadas de actividades para debater na aula.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/yukiunratonpeculiar.jpg" alt="Yuki, un rato peculiar" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Yuki, un rato peculiar</h3>
+      <p><strong>Autor:</strong> Dámaris Camarero<br>
+      <strong>Idade:</strong> 7-10 anos</p>
+      <p>Historia de amizade e aceptación entre un rato diferente e unha gata, que trata o bullying e celebra a diversidade.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/kakamonstruos.jpg" alt="O club dos Kakamonstruos" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>O club dos Kakamonstruos</h3>
+      <p><strong>Autor:</strong> Ana Coto Fernández<br>
+      <strong>Idade:</strong> 9-12 anos</p>
+      <p>Aventura fantástica onde un grupo de rapaces combate o bullying e fomenta a solidariedade e compañeirismo con humor e valentía.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/miformadehaceramigos.jpg" alt="A miña forma de facer amigos" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>A miña forma de facer amigos</h3>
+      <p><strong>Autor:</strong> Elizabeth Cole<br>
+      <strong>Idade:</strong> 6-10 anos<br>
+      </p>
+      <p>Libro ilustrado que ensina a importancia da amizade, a inclusión e mostra comportamentos sociais positivos para relacionarse cos demais.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/almendra.jpg" alt="Almendra" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Almendra</h3>
+      <p><strong>Autor:</strong> Won‑Pyung Sohn<br>
+      <strong>Idade:</strong> 10‑14 anos<br>
+      <strong>ISBN:</strong> edición española 2020</p>
+      <p>Novela xuvenil que explora a dificultade de recoñecer emocións e como aprender a conectar e comunicarse cos demais, ideal para traballar empatía e comprensión do outro.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <footer>
+    Escola Diversa - Competencia Clave: Habilidades Sociais
+  </footer>
+
+  <script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
