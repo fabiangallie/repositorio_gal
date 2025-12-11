@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interculturalidad</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #ff33cc66, 0 0 120px 60px #ff33cc33 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff33cc;
+      text-shadow: 0 0 10px #ff33cc88;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #ff33cc;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #ff33cc;
+      border: 2px solid #ff33cc;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #ff33cc;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #ff33cc44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #ff33cc22;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #ff33cc;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #ff33cc;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Interculturalidade</h1>
+<p>Fomentar a comprensión e a valoración da diversidade cultural.</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i> Inicio</button>
+</header>
+<nav>
+  <button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i> Publicacións</button>
+  <button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i> Dinámicas</button>
+  <button onclick="mostrar('videos')"><i class="fas fa-video"></i> Vídeos</button>
+  <button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i> TIC</button>
+  <button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i> Lecturas</button>
+</nav>
+
+
+
+<section id="dinamicas">
+  <div class="card-container">
+    <div class="card">
+      <h3><i class="fas fa-globe"></i> Mapa de orixes</h3>
+      <p>Cada alumno marca nun mapa mundial o país ou rexión de orixe da súa familia. Despois comparten costumes, linguas ou comidas típicas. Isto permite visibilizar a diversidade do grupo e valorala como riqueza cultural.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-utensils"></i> Sabores do mundo</h3>
+      <p>Os alumnos traen receitas ou pratos representativos da súa cultura familiar. Fágase unha feira gastronómica explicando o orixe de cada comida. Estimula a curiosidade, o respeto e o diálogo intercultural desde o cotiá.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-music"></i> Sons do planeta</h3>
+      <p>Escoítanse músicas típicas de diferentes países e os alumnos adiviñan o seu orixe. Despois investígase sobre os seus instrumentos, letras ou bailes. Refuerza a apreciación das expresións culturais diversas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-flag"></i> Desfile de bandeiras</h3>
+      <p>Cada estudante elixe unha bandeira que represente a súa cultura ou a dos seus antepasados. Preparan unha breve presentación. A clase decórase con elas. Refuerza a identidade e o respecto polas outras raíces.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Contos do mundo</h3>
+      <p>Lémbrese contos tradicionais de diferentes partes do mundo e compáranse as súas ensinanzas. Despois dramatízanse. Esta actividade promove a comprensión de valores universais desde distintas culturas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-palette"></i> Arte sen fronteiras</h3>
+      <p>Taller artístico onde se utilizan técnicas decorativas de distintas culturas (mandalas, máscaras africanas, caligrafía árabe). Exponse nunha galería intercultural. Desenvolve a creatividade e a valoración do outro.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-comments"></i> Historias compartidas</h3>
+      <p>Os estudantes entrevistan ás súas familias sobre as súas historias migratorias ou anécdotas culturais. Despois comparten no grupo o aprendido. Fortalece o vínculo interxeracional e o entendemento do outro.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-handshake"></i> Saudarse como en...</h3>
+      <p>Apréndense formas de saúdo de diferentes culturas (beizo, reverencia, palabra). Despois utilízanse nunha dinámica grupal. Ensina respecto polos códigos culturais diversos.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-theater-masks"></i> Teatro intercultural</h3>
+      <p>Dramatízanse escenas onde aparecen malentendidos culturais. Despois reflexiamos sobre como evitalos. Axuda a desenvolver empatía e a previr a discriminación.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-language"></i> Palabras amigas</h3>
+      <p>Os alumnos ensinan unha palabra ou frase no seu idioma materno. Créanse carteis con elas. Visibiliza a riqueza lingüística da aula.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-bullhorn"></i> Campaña antirracismo</h3>
+      <p>Diseñan carteis ou eslóganes contra a discriminación cultural ou racial. Despois expóñense nos pasillos. Promove o compromiso coa inclusión.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-video"></i> Cinema sen fronteiras</h3>
+      <p>Proxéctanse curtos ou películas sobre convivencia intercultural. Realízase debate posterior. Favorece o análise crítico e o diálogo respectuoso.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-child"></i> Xogos do mundo</h3>
+      <p>Cada semana apréndese un xogo típico dun país distinto (axedrez chinés, raia chilena, mancala africano). Estimula o desfrute compartido e o respecto lúdico.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-school"></i> Embaixadores culturais</h3>
+      <p>Equipos de estudantes representan unha cultura e explícanlla á clase. Despois fan actividades interactivas. Refuerza o respecto mutuo e a autoestima cultural.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-photo-video"></i> Álbum de rostros</h3>
+      <p>Con fotos aportadas polas familias, constrúese un mural coa diversidade do grupo. Cada imaxe acompáñase dunha historia. Fomenta o orgullo identitario.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-heart"></i> O que nos une</h3>
+      <p>Nun mural común, os nenos escriben valores que comparten máis alá das diferenzas: amor, amizade, respecto. Visualiza a unidade na diversidade.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-map-marked-alt"></i> Viaxe imaxinaria</h3>
+      <p>En equipos, crean unha axencia de viaxes que presenta destinos culturais. Deben mostrar costumes, linguas e comidas. Estimula a curiosidade e a colaboración.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-hands-helping"></i> Historias de acollida</h3>
+      <p>Compártense relatos reais ou ficticios de nenos que migraron. Reflexiónase sobre as emocións que isto implica. Fomenta empatía e hospitalidade.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-clipboard-check"></i> Compromisos interculturais</h3>
+      <p>Cada neno propón un pequeno xesto diario para favorecer a inclusión (invitar a xogar, traducir, respectar a comida allea...). Faise seguimento. Promove accións concretas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Reflexións sen prexuízos</h3>
+      <p>Proponse frases provocadoras (ex. 'todos os africanos bailan ben') para debater e desmontar estereotipos. Educa o pensamento crítico e o respecto real.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="publicaciones"><div class="card-container">
+<div class="card">
+  <h3><i class="fas fa-book"></i> Educación Intercultural nas Escolas: Das Políticas ás Prácticas en Cataluña (España)</h3>
+  <p>Análise da evolución dos discursos e prácticas na escola catalana entre 2000‑2016. Documento académico en PDF.</p>
+  <a href="https://www.academia.edu/60187043/Intercultural_Education_in_Schools_From_Policies_to_Practices_in_Catalonia_Spain_" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> A interculturalidade na educación</h3>
+  <p>Revisión crítica desde Latinoamérica (PDF), propón enfoques integrais na educación intercultural.</p>
+  <a href="https://centroderecursos.cultura.pe/sites/default/files/rb/pdf/La%20interculturalidad%20en%20la%20educacion_0.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> A escola intercultural en Educación Primaria</h3>
+  <p>TFG (2019‑2020) que estuda estratexias e o rol docente en aulas culturalmente diversas.</p>
+  <a href="https://riull.ull.es/xmlui/bitstream/handle/915/21496/La%20escuela%20intercultural%20en%20Educacion%20Primaria.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> A interculturalidade en Educación Primaria</h3>
+  <p>Artigo (2010) que explica como integrar a interculturalidade desde o currículo e a pedagogía.</p>
+  <a href="https://dialnet.unirioja.es/descarga/articulo/3745716.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> Escolas Multiculturais: Apoio á Diversidade na Educación</h3>
+  <p>Estudo en PDF sobre promoción da diversidade lingüística e cultural en escolas primarias.</p>
+  <a href="https://digitalcommons.lmu.edu/cgi/viewcontent.cgi?article=1019&context=internationalcolloquium" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> Estilos de aprendizaxe e educación intercultural na escola</h3>
+  <p>Reflexión (2017) sobre a relación entre estilos de aprendizaxe e a interculturalidade en aulas.</p>
+  <a href="https://www.researchgate.net/publication/312547544_Estilos_de_aprendizaxe_y_educacion_intercultural_en_la_escuela_LEARNING_STYLES_AND_INTERCULTURAL_EDUCATION_AT_SCHOOL" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> Definindo Cultura: Educación Intercultural Bilingüe</h3>
+  <p>Estudo en Cusco (PDF) sobre percepcións na educación intercultural bilingüe con comunidade quechua.</p>
+  <a href="https://citeseerx.ist.psu.edu/document?doi=35e3ce90a0d9c8c08e4897a119ecff8cfcbc727f&repid=rep1&type=pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> Interculturalidade na escola (Chile)</h3>
+  <p>Documento oficial chileno con recomendacións escolares para incorporar o enfoque intercultural.</p>
+  <a href="https://archivos.agenciaeducacion.cl/Interculturalidad_en_la_escuela_vf.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> Educación intercultural, equidade e práctica escolar</h3>
+  <p>Revisión sistemática (2025) sobre a implementación de enfoques interculturais en Europa e América Latina.</p>
+  <a href="https://revistascientificas.us.es/index.php/fuentes/article/view/27347" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> Renovación pedagóxica e educación intercultural en España</h3>
+  <p>Estudo recente (2024) que vincula renovación pedagóxica con prácticas interculturais nas escolas españolas.</p>
+  <a href="https://upcommons.upc.edu/bitstream/handle/2117/426344/2641-9171-1-PB.pdf?isAllowed=y&sequence=1" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+</div>
+</section>
+
+<section id="videos"><div class="card-container">
+
+<div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Interculturalidade: conceptos básicos</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/VuZs6JkLKDM" title="Vídeo Educativo/Informativo sobre Interculturalidade" frameborder="0" allowfullscreen></iframe>
+      <p>Introdución clara aos conceptos de diversidade cultural, diálogo e convivencia respectuosa.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Interculturalidade crítica (SEP)</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/yXLh_A4TuUc" title="Vídeo animado: Interculturalidade crítica" frameborder="0" allowfullscreen></iframe>
+      <p>Proposta docente da SEP para motivar unha interculturalidade reflexiva na aula.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Tolerantia</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/FrjQrXc80cY" title="Tolerantia – animación sobre intolerancia" frameborder="0" allowfullscreen></iframe>
+      <p>Animación europea que aborda a intolerancia e promove o respecto entre diferentes culturas e persoas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Binta e a gran idea</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/zqNzfRaKw9g" title="Binta e a gran idea" frameborder="0" allowfullscreen></iframe>
+      <p>Corto-nominado a oscar sobre igualdade, educación e empoderamento feminino en África.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> O xefe e o carpinteiro</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/ItoEwcGi8Ig" title="O xefe e o carpinteiro" frameborder="0" allowfullscreen></iframe>
+      <p>Fábula animada uruguaia que ensina a importancia da escoita, o sentido común e o diálogo intercultural.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Willakuy!</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/-X6iOwIjHdw" title="Willakuy!" frameborder="0" allowfullscreen></iframe>
+      <p>Enfrenta o choque de culturas moderno e identidades. Ideal para traballar autoestima cultural e reconciliación persoal.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Aprende con Dani. África</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/vJyEWUAO7JM?si=N_zDgszeo2UQ_RKJ" title="Aprende con Dani. África" frameborder="0" allowfullscreen></iframe>
+      <p>Coñece como viven e se expresan os nenos e nenas en África, que comen, que valoran e como ven o mundo.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Partir de cero</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/D95DqgyaMz4?si=ywuTLVf4sIjGkMy-" title="Partir de cero" frameborder="0" allowfullscreen></iframe>
+      <p>Un corto de animación conta a historia de Samara, unha moza gitana que percorre un camiño cheo de dificultade para chegar á Cidade Cero.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Baraka</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/gJdqT9b6S4g?si=Oo78rmN5Iw4pRKcu" title="Baraka" frameborder="0" allowfullscreen></iframe>
+      <p>Documental sobre a diversidade cultural en 24 países. Sen diálogo verbal, transmite poderosamente ideas de respecto, espiritualidade e unidade humana.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> A Leonor real e outros nenos reais</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/_RxMwVmABF8?si=lK6GiYe09ZSe6lY3" title="A Leonor real e outros nenos reais" frameborder="0" allowfullscreen></iframe>
+      <p>Comparativa entre a vida dunha nena europea e a de outros nenos do mundo para reflexionar sobre os privilexios e a desigualdade desde unha mirada crítica e empática.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> O viaxeiro Said</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/Vj_uTysl3kI?si=utesWSjnarCwcRub" title="O viaxeiro Said" frameborder="0" allowfullscreen></iframe>
+      <p>Corto de animación que retrata con sensibilidade a migración infantil, o abandono e o soño dunha vida digna nun país diferente.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> MIGRANTE</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/7qJDu-rMxl4" title="Migrante" frameborder="0" allowfullscreen></iframe>
+      <p>Corto animado colaborativo construído a partir de testemuños reais sobre migración en Latinoamérica.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> REFUXIO</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/QN3gWugzLkk" title="Refuxio" frameborder="0" allowfullscreen></iframe>
+      <p>Animación que aborda a experiencia de refuxio e acollida desde unha mirada humana e solidaria.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Pequenas voces</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/ovWGE4sgPe4" title="Pequenas voces" frameborder="0" allowfullscreen></iframe>
+      <p>Documental animado baseado nos debuxos e testemuños de nenos desprazados en Colombia.</p>
+    </div>
+
+<div class="card">
+  <h3><i class="fas fa-globe" style="color:#4db6ac;"></i> Que é a interculturalidade? Principios</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/Pn_ERApbeoI" title="Que é a interculturalidade" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo que explica en que consiste a interculturalidade, os seus principios, etapas e algúns exemplos prácticos.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-globe" style="color:#4db6ac;"></i> Vídeo educativo: Interculturalidade</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/VuZs6JkLKDM" title="Vídeo educativo sobre interculturalidade" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Presenta os conceptos básicos de interculturalidade e como favorecer o respecto entre culturas.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-globe" style="color:#4db6ac;"></i> A interculturalidade</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/Qq06rk_SjII" title="A interculturalidade" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Explica a importancia da interculturalidade para fortalecer as relacións entre persoas de diferentes orixes.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book" style="color:#4db6ac;"></i> Conto: Café como o chocolate (interculturalidade)</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/CvJVKpdg6_M" title="Café como o chocolate" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Un conto que incentiva a respectar a diversidade e tolerar as diferenzas culturais.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Interculturalidade crítica – cápsula animada</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/dYvsHaDu_ps" title="Interculturalidade crítica animada" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Cápsula animada que presenta unha mirada crítica da interculturalidade con exemplos aplicados.</p>
+</div>
+
+
+</div>
+</section>
+
+
+
+<section id="tic"><div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-globe"></i> Google Earth: Viaxe polo Mundo</h3>
+      <p>Explora o mundo e coñece diferentes culturas a través de imaxes, historia e datos interesantes con Google Earth.</p>
+      <a href="https://earth.google.com/web/" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-users"></i> Competencia Global: Ideas para Docentes</h3>
+      <p>Recurso educativo da UNESCO para desenvolver competencias globais e interculturais na aula.</p>
+      <a href="https://www.unesco.org/en/global-competence" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-language"></i> Duolingo</h3>
+      <p>Aplicación para aprender idiomas de forma divertida e dinámica, axudando a comprender outras linguas e culturas.</p>
+      <a href="https://www.duolingo.com/" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-comments"></i> Intercultural Literacy Project</h3>
+      <p>Proxecto interactivo da Universidade de California para ensinar sobre diversidade e habilidades interculturais.</p>
+      <a href="https://www.cde.ca.gov/sp/el/er/icdl.asp" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> StoryCorps: Historias da Comunidade Global</h3>
+      <p>Plataforma onde se recollen historias de vida de persoas de diferentes culturas, promovendo a empatía e o entendemento intercultural.</p>
+      <a href="https://storycorps.org/" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-globe"></i> Aula Intercultural</h3>
+      <p>Plataforma educativa que ofrece materiais didácticos, xogos interactivos e recursos multimedia para promover a convivencia intercultural na aula.</p>
+      <a href="https://aulaintercultural.org/" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-users"></i> Ventá a miña Comunidade</h3>
+      <p>Serie de vídeos que presentan a vida cotiá, tradicións e linguas de comunidades indíxenas mexicanas, promovendo o respecto e aprecio pola diversidade cultural.</p>
+      <a href="https://ventanaamicomunidad.org/" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-comments"></i> Recursos TIC como facilitadores da Educación Intercultural</h3>
+      <p>Estudo que presenta recursos TIC impulsados por institucións españolas para promover a interculturalidade entre a comunidade educativa, avaliados pola súa utilidade e calidade.</p>
+      <a href="https://eujournal.org/index.php/esj/article/view/13840" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Interculturalidade desde a Aula</h3>
+      <p>Recurso da Universidade de Castilla-La Mancha que ofrece ferramentas e estratexias para integrar a interculturalidade no entorno educativo, apoiando a construción de aprendizaxes desde unha perspectiva intercultural.</p>
+      <a href="https://www.uclm.es/es/grupos/aprendemos-enter-culturas/aprendemos-enter-culturas-1/herramientas-y-recursos-didacticos-capi/interculturalidad-desde-el-aula" target="_blank">Acceder ao recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-laptop"></i> A educación intercultural mediante o uso das TIC</h3>
+      <p>Traballo académico que propón un proxecto de educación intercultural utilizando a ferramenta dixital Glogster para traballar as destrezas comunicativas na área de Linguaxe Estranxeira Inglés.</p>
+      <a href="https://uvadoc.uva.es/bitstream/handle/10324/4529/TFG-L397.pdf?sequence=1" target="_blank">Acceder ao recurso</a>
+    </div>
+
+  </div>
+
+</div></section>
+
+
+
+<section id="lecturas"><div class="card-container">
+
+<div class="card">
+  <img src="img/danbi.jpg" alt="Danbi Leads the School Parade" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Danbi Leads the School Parade</h3>
+  <p><strong>Autor:</strong> Anna Kim<br>
+  <strong>Idade:</strong> 9-12 anos<br>
+  <strong>ISBN:</strong> 9780451478894</p>
+  <p>Danbi chega desde Corea á súa nova escola en EE. UU. e comparte a súa cultura mentres encontra formas de conectarse cos demais. Ideal para falar de integración e respecto.</p>
+</div>
+
+<div class="card">
+  <img src="img/papa_racismo.jpg" alt="Papá, ¿qué es el racismo?" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Papá, ¿qué es el racismo?</h3>
+  <p><strong>Autor:</strong> Tahar Ben Jelloun<br>
+  <strong>Idade:</strong> 10-12 anos<br>
+  <strong>ISBN:</strong> 9788426390653</p>
+  <p>Unha conversa entre pai e filla que permite introducir o tema do racismo de forma clara, cercana e comprensible. Perfecto para abrir debate na aula.</p>
+</div>
+
+<div class="card">
+  <img src="img/uñascolores.jpg" alt="¡Vivan las uñas de colores!" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>¡Vivan las uñas de colores!</h3>
+  <p><strong>Autor:</strong> Alicia Acosta e Luis Amavisca<br>
+  <strong>Idade:</strong> 9-12 anos<br>
+  <strong>ISBN:</strong> 9788416434163</p>
+  <p>Juan quere pintarse as uñas e é criticado por iso, pero o seu papá apoiámolo. Unha historia sobre diversidade, expresión persoal e respecto ás diferenzas.</p>
+</div>
+
+<div class="card">
+  <img src="img/eduprincesa.jpg" alt="Edu se viste de princesa" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Edu se viste de princesa</h3>
+  <p><strong>Autor:</strong> Díaz Berride<br>
+  <strong>Idade:</strong> 9-12 anos<br>
+  <strong>ISBN:</strong> 9788417028224</p>
+  <p>Edu rompe estereotipos e decide levar vestidos, o que xera rexeitamento, pero tamén reflexión. Un conto para traballar diversidade de xénero e respecto cultural.</p>
+</div>
+
+<div class="card">
+  <img src="img/huguis.jpg" alt="Los Huguis en el jersey nuevo" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Los Huguis en el jersey nuevo</h3>
+  <p><strong>Autor:</strong> Oliver Jeffers<br>
+  <strong>Idade:</strong> 9-12 anos<br>
+  <strong>ISBN:</strong> 9788467861642</p>
+  <p>Unha historia sinxela sobre aceptación e exclusión: un novo personaxe diferente chega ao grupo e é rexeitado. Excelente para traballar inclusión desde a empatía.</p>
+</div>
+
+<div class="card">
+  <img src="img/cuentosafricanos.jpg" alt="Cuentos africanos" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Cuentos africanos</h3>
+  <p><strong>Autor:</strong> Diversos autores<br>
+  <strong>Idade:</strong> 9-12 anos<br>
+  <strong>ISBN:</strong> 9788420431864</p>
+  <p>Compilación de contos populares africanos que permiten coñecer outras culturas, cosmovisións e valores tradicionais. Excelente para enriquecer a diversidade lectora.</p>
+</div>
+
+</div></section>
+<footer>
+    EscolaDiversa - Competencia Clave: Interculturalidade
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
